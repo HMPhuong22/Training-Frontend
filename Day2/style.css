@@ -1,0 +1,13 @@
+/* table */
+ th, td{
+    border: 1px solid black;
+}
+th, td{
+    width: 20%;
+    height: 20px;
+}
+
+/* Styling */
+.tableOne tr:nth-child(even){
+    background-color: #D6EEEE;
+}

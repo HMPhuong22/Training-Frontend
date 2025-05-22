@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- IV. SEO: "Search Engine Optimization" tối ưu hóa công cụ tìm kiếm. -->      
+    <!-- 1. Meta tag -->
+    <!-- keywords: xác định từ khóa tìm kiếm cho công cụ tìm kiếm -->
+    <meta name="keywords" content="html, css, js">
+    <!-- description: môt tả về trang web -->
+    <meta name="description" content="learn front end basic">
+    <!-- Author: tác giả của trang -->
+    <meta name="author" content="Phuong">
+    <!-- refresh: thiết lập thời gian làm mới trang -->
+    <meta http-equiv="refresh" content="15">
+    <meta charset="UTF-8">
+    <!-- viewport: chế độ xem -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Day 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- I. Form 
+     1. Attribute
+     - _blank: mở trong cửa sổ mới
+     - _self: mở trong cửa sổ hiện tại
+     - _parent: mở trong cửa sổ cha
+     - _top: hiển thị trong toàn bộ cửa sổ
+     - framename: hiển thị trong 1 iframe đã được đặt tên
+     2. Elements
+     - input
+     - label
+     - select 
+     - button
+     - textarea
+     - option  
+     3. input types
+     - Định nghĩa kiểu của input 
+     4. input attribute   
+     - value: tạo giá trị ban đầu
+     - disable: không chỉnh sửa được
+     - readonly: chỉ hiển thị, không chỉnh sửa được
+     - size: chỉ định chiều rộng
+     - maxlenght: chỉ định số kí tự tối đa được nhập
+     - min...max: giá trị tối thiểu và tối đa. Ví dụ: min="10" max="100"
+     - multiple: cho phép tải lên nhiều hơn 1 file
+     - pattern: yêu cầu nhập đúng biểu mẫu chỉ định. Ví dụ: pattern="[0-9]{10}"
+     - placeholder: hiển thị ví dụ giá trị nên nhập.
+     - require: yêu cầu nhập trước khi gửi biểu mẫu.
+     - list: hiển thị danh sách để chọn giá trị.
+     - -->
+    <form action="../Day1/Day1.html" target="_blank">
+        <label for="">Name: </label>
+        <input type="text"><br>
+        <label for="">Age: </label>
+        <input type="text" placeholder="hà minh phương"><br>
+        <input type="checkbox">
+        <input type="color">
+        <button type="submit">Go</button>
+
+        <!-- list -->
+        <input list="Sport">
+        <datalist id="Sport">
+            <option value="Soccer">
+            <option value="Babminton">
+            <option value="Swim">
+        </datalist>
+    </form>
+
+    <!-- II. Table -->
+    <table class="tableOne">
+        <thead>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Phuong</td>
+                <td>23</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hoang</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hoang</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hoang</td>
+                <td>18</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Hoang</td>
+                <td>18</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- 1. border -->
+    <!-- 2. size -->
+    <!-- 3. colspan and rowspan -->
+    <h3>Table colspan and rowspan</h3>
+    <table id="tb-border" style="border: 1px  solid  black; width: 40%;">
+       <thead>
+           <th colspan="3">2022</th>
+       </thead> 
+       <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <th rowspan="2">FIESTA</th>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+       </tbody>
+   </table>
+
+   <!-- III. Semantic tag -->
+    <!-- <header>: biểu thị vùng chứa nội dung gthieu hoặc liên kết điều hướng -->
+        <h1>Header</h1>
+        <article>
+            <header>
+              <h1>What Does WWF Do?</h1>
+              <p>WWF's mission:</p>
+            </header>
+            <p>WWF's mission is to stop the degradation of our planet's natural environment,
+            and build a future in which humans live in harmony with nature.</p>
+        </article>
+        <hr>
+    <!-- <section>: xác định 1 phần trong tài liệu -->
+        <h1>Section</h1>
+        <section>
+            <h3>WWF</h3>
+            <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+            </section>
+            
+            <section>
+            <h3>WWF's Panda symbol</h3>
+            <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+        </section>
+        <hr>
+    <!-- <article>: chỉ định nội dung độc lập: bài báo, bài viết diễn đàn -->
+        <h1>Article</h1>
+        <article>
+            <h3>Google Chrome</h3>
+            <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+            </article>
+            
+            <article>
+            <h3>Mozilla Firefox</h3>
+            <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+        </article>
+        <hr>
+        <!-- <aside>: xác định nội dung bên ngoài mà nó được đặt vào -->
+        <h1>Aside</h1>
+        <p>Gia đình tôi và tôi đã đến thăm trung tâm Epcot vào mùa hè này. Thời tiết đẹp và Epcot thật tuyệt vời! Tôi đã có một mùa hè tuyệt vời cùng gia đình!</p>
+
+        <aside>
+            <h4>Epcot Center</h4>
+            <p>Epcot là công viên giải trí tại Walt Disney World Resort với nhiều điểm tham quan thú vị, gian hàng quốc tế, pháo hoa đạt giải thưởng và các sự kiện đặc biệt theo mùa.</p>
+        </aside>
+        <hr>
+    <!-- <nav>: xác định 1 tập liên kết điều hướng -->
+        <h1>Navbar</h1>
+        <nav>
+            <a href="/Day2/NavLocation/Style.html">Style</a> |
+            <a href="/Day2/NavLocation/css.html">CSS</a> |
+            <a href="/Day2/NavLocation/JavaScript.html">JavaScript</a> |
+        </nav>
+        <hr>
+    <!-- <footer>: Xác định phần tử cuối cho tài liệu -->
+        <h1>Footer</h1>
+        <footer>
+            <p>Author: Hege Refsnes</p>
+            <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+        </footer>
+        <hr>
+        <!-- <figure> và <figcaption>: chỉ định nội dung độc lập (như ảnh và chú thích của ảnh) -->
+        <h1> Figure and Figcaption </h1>
+        <figure>
+            <img src="https://scontent.fhan5-9.fna.fbcdn.net/v/t39.30808-6/500324296_1286317669522767_5650674455916084035_n.jpg?stp=dst-jpg_s640x640_tt6&_nc_cat=1&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFEfX6GofL5KTA_ymeXapbBWf7lbwu7XmBZ_uVvC7teYCoS9JiykmSSdOokgcLin1PFfhIaHkX6W8kHcqUJDU-p&_nc_ohc=pIJOH18zz4AQ7kNvwGIaDt5&_nc_oc=AdmNfo1wNDQh6y1x9WuPN9m8b5x2E9yLsM_gPfw_v_lileWW1AaAFihp9PsVj6rE7NQ&_nc_zt=23&_nc_ht=scontent.fhan5-9.fna&_nc_gid=vH5Shc8xwFaFR9oVZycoUg&oh=00_AfKX5BcwCCneNDZ7ETJesSzYp_N2dn8wVuYM2iocmtFQLw&oe=683463AB" alt="Ảnh đá bóng">
+            <figcaption>Son with Kane</figcaption>
+        </figure>
+        
+</body>
+</html>
